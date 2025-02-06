@@ -2,7 +2,7 @@ const http = require('http')
 
 const server = http.createServer((req, res) => {
     if(req.url === '/'){
-        res.end("Hello welcome to the Pegasus page")
+        res.end("Hello welcome to the Pegasus's page")
         return;
     }
     if(req.url === '/about'){
@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
         return;
     }
     res.end(
-        `<h1>Opps!!!</h1>
+        `<h1>Opps!!!!</h1>
         <p>There have been an error</p>
         <a href='/'> Back home</a>`
     )
